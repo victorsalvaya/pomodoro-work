@@ -54,6 +54,7 @@ pauseBtn.addEventListener('click', function(){
 });
 
 codeTimeBtn.addEventListener('click', function(){
+    clearInterval(startInClock)
     minutos = 0
     clock.innerHTML = formatTimer(1500)
     minutos = 1500
@@ -62,6 +63,7 @@ codeTimeBtn.addEventListener('click', function(){
 });
 
 codeBreakBtn.addEventListener('click', function(){
+    clearInterval(startInClock)
     minutos = 0
     clock.innerHTML = formatTimer(300)
     minutos = 300
@@ -69,6 +71,7 @@ codeBreakBtn.addEventListener('click', function(){
 })
 
 codeCoffeBtn.addEventListener('click', function(){
+    clearInterval(startInClock)
     clock.classList.remove('end') 
     minutos = 0
     clock.innerHTML = formatTimer(900)
