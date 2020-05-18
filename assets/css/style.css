@@ -1,0 +1,115 @@
+:root {
+    --primary-color: rgb(39, 39, 39);
+    --second-color: #612F74;
+   }
+   
+   * {
+    box-sizing: border-box;
+    outline: 0;
+   }
+   
+   body {
+       margin: 0;
+       padding: 0;
+       background: var(--primary-color);
+       font-size: 1.3em;
+       line-height: 1.5em;
+       font-family: 'Oswald', sans-serif;
+       
+   }
+   
+   body button {
+       font-family: 'Oswald', sans-serif;
+   }
+
+   footer {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: var(--second-color);
+        width: 100%;
+   }
+
+   footer a {
+       text-decoration: none;
+       color: initial;
+   }
+   
+   .container {
+        max-width: 640px;
+        margin: 0 auto;
+        display: flex;
+        height: 600px;
+        justify-content: center;
+    }
+
+   .content-element {
+        display: flex;
+        flex-direction: column;
+        justify-content: center
+   }
+
+   .clock {
+       font-size: 3em;
+       color: #fff;
+       margin-bottom: 10px;
+       text-align: center;
+   }
+
+   .end {
+       color: #f33131;
+   }
+   
+   .content-element-btn-style {
+        color: #fff;
+        background-color: var(--second-color);
+        width: 100px;
+        height: 27px;
+        border: 1px solid #fff;
+   }
+
+   .content-element-text {
+       color: var(--second-color);
+       font-size: 1.1em;
+       text-align: center;
+   }
+
+   .content-element-icon {
+       text-align: center;
+       margin-top: 10px;
+   }
+
+   .content-element-icon-style {
+        background-color: #fff8f866;
+        padding: 10px;
+        border-radius: 30px;
+        margin: 0 13px;
+   }
+
+   .active-Action {
+        background-color: #fff;
+   }
+
+   .footer-info {
+    margin: 0;
+    padding-left: 10%;
+    }
+    .footer-info a {
+        color: #fff;
+    }
+    .copyright {
+        background-color:  #641882;
+    }
+    .copyright p {
+        text-align: center;
+        color: #fff;
+        font-size: 0.8em;
+        margin: 0;
+    }
+
+    @media (max-width: 600px ) {
+        .footer-info{
+            text-align: center;
+            padding-left: 0;
+        }
+    }
