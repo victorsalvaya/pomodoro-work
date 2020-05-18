@@ -15,8 +15,6 @@ formatTimer = (seconds) => {
     });  
 }
 
-
-
 startClock = (valor) => {
     startInClock = setInterval(function(){
         if(valor === 0) {
@@ -37,9 +35,6 @@ clockEffect = () => {
     audio.play()
 }
 
-
-
-
 startBtn.addEventListener('click',function(){
     clearInterval(startInClock)
     startClock(minutos) 
@@ -55,25 +50,24 @@ pauseBtn.addEventListener('click', function(){
 
 codeTimeBtn.addEventListener('click', function(){
     clearInterval(startInClock)
-    minutos = 0
-    clock.innerHTML = formatTimer(1500)
-    minutos = 1500
     clock.classList.remove('end') 
-
+    clock.innerHTML = formatTimer(1500)
+    minutos = 0
+    minutos = 1500
 });
 
 codeBreakBtn.addEventListener('click', function(){
     clearInterval(startInClock)
-    minutos = 0
-    clock.innerHTML = formatTimer(300)
-    minutos = 300
     clock.classList.remove('end') 
+    clock.innerHTML = formatTimer(300)
+    minutos = 0
+    minutos = 300
 })
 
 codeCoffeBtn.addEventListener('click', function(){
     clearInterval(startInClock)
     clock.classList.remove('end') 
-    minutos = 0
     clock.innerHTML = formatTimer(900)
+    minutos = 0
     minutos = 900
 })
