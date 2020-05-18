@@ -28,6 +28,7 @@
         bottom: 0;
         background: var(--second-color);
         width: 100%;
+        clear: both;
    }
 
    footer a {
